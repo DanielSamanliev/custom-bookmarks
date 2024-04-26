@@ -1,0 +1,87 @@
+body {
+  width: 24rem;
+  height: fit-content;
+  color: #b4a5a5;
+  background-color: #151515;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+li {
+  user-select: none;
+  width: 100%;
+  margin-left: -2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+#bookmarks-list {
+  overflow-y: scroll;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #3c415c;
+  height: fit-content;
+  margin-bottom: 2rem;
+  background-color: #301b3f;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookmark:hover {
+  background-color: #3c415c;
+}
+
+.folder {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.folder-item {
+  width: 100%;
+}
+
+.folder-name {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.folder:hover {
+  background-color: #3c415c;
+}
+
+.bookmark-url {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 80%;
+  height: 100%;
+}
+
+.bookmark-controls {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+}

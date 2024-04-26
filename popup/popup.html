@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom bookmarks manager</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <input type="text" id="title" placeholder="Title..." />
+      <input type="text" id="url" placeholder="Url..." />
+      <input
+        type="text"
+        id="folder-input"
+        list="folders"
+        placeholder="Folder"
+      />
+      <datalist id="folders">
+        <option value="All Bookmarks"></option>
+      </datalist>
+      <div class="buttons">
+        <button id="bookmark-button">Add Bookmark</button>
+        <button id="quick-add">Quick Add</button>
+      </div>
+    </div>
+    <input type="text" id="search-input" placeholder="Type to search..."/>
+    <ul id="bookmarks-list"></ul>
+  </body>
+  <script src="ui.js"></script>
+  <script src="bookmarkManager.js"></script>
+  <script src="popup.js"></script>
+</html>
